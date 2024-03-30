@@ -1,0 +1,18 @@
+{
+    "name": "js2ts",
+    "version": "0.0.1",
+    "description": "为 js 对象自动生成为 ts 类型",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "./img/f16.png",
+        "48": "./img/f48.png",
+        "128": "./img/f128.png"
+    },
+    "sandbox": {
+        "pages": ["popup.html"]
+    },
+
+    "manifest_version": 3
+}

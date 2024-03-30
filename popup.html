@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="Content-Security-Policy" content="unsafe-eval" /> -->
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self' data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *;connect-src *;script-src * 'unsafe-inline' 'unsafe-eval';"
+        />
+    </head>
+
+    <body>
+        <div>
+            <div>
+                <span>配置选项</span>
+                <div><input type="checkbox" id="one" checked /><label for="one">是否需要添加 export</label></div>
+                <!-- <div>
+                <span>2.请输入变量名字,默认为 XXXXX </span>
+                <input type="text" placeholder="请输入变量名字,默认为 XXXXX" width="400" />
+            </div> -->
+            </div>
+        </div>
+        <div>步骤 1,将你需要转换的对象复制到下面框框中</div>
+        <textarea id="read" name="" id="" cols="100" rows="10"></textarea>
+        <div>步骤 2,点击下面的框框</div>
+        <textarea id="resString" name="" id="" cols="100" rows="10"></textarea>
+        <!-- <button id="copyButton">copyButton</button> -->
+    </body>
+    <script src="./js/main.js"></script>
+    <script src="./js/background.js"></script>
+</html>
