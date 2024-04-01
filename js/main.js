@@ -144,6 +144,9 @@
                         if (JSON.stringify(value) === '{}') {
                             resString += '{}';
                         }
+                        if (JSON.stringify(value) === '[]') {
+                            resString += '[]';
+                        }
                         loopAddStringFn(value); // 继续循环添加字符串
 
                         // 如果这个数组已经进行到了最后一个元素
@@ -184,7 +187,9 @@
                         if (JSON.stringify(value) === '{}') {
                             resString += '{}';
                         }
-
+                        if (JSON.stringify(value) === '[]') {
+                            resString += '[]';
+                        }
                         loopAddStringFn(value);
                         count++; // 操作次数增加
                         if (count === len) resString += '}';
